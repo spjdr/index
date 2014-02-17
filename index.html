@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="dan"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="dan"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="dan"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="dan"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	
+	<title>spjdr</title>
+	<meta name="title" content="spjdr"> 
+	<meta name="language" content="dan"> 
+	<meta property="og:image" content="http://ny.spjdr.dk/assets/img/logo/spjdr.jpg">
+	<meta name="description" content="spjdr is a non-profit web-development cooperation with roots in the danish scouting association."> 
+	<meta name="keywords" content="spjdr, scouting, kfum spejderne, klan picnic"> 
+
+	<link rel="image_src" href="http://ny.spjdr.dk/assets/img/logo/spjdr.jpg" />
+  
+	<!-- Included CSS Files -->
+	<!-- These files are being included - to omit files, move them to the block below. -->
+
+	<link rel="stylesheet" href="assets/css/globals.css">
+	<link rel="stylesheet" href="assets/css/ui.css">
+	<link rel="stylesheet" href="assets/css/forms.css">
+	<link rel="stylesheet" href="assets/css/orbit.css">
+	<link rel="stylesheet" href="assets/css/reveal.css">
+	<link rel="stylesheet" href="assets/css/cluster.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/mobile.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="public/css/ie.css">
+	<![endif]-->
+	
+	<link rel="stylesheet" href="assets/css/spjdr.css">
+
+	<!-- These files are not being included.
+	
+		# <link rel="stylesheet" href="public/css/example.css">
+		# 
+		# 
+		# 
+	
+	-->
+	
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+
+		.huskekort_icon {
+			background-image: url('http://ny.spjdr.dk/huskekort/assets/img/huskekort-icon-120x120.png');
+		}
+	</style>
+</head>
+<body>
+
+	<!-- container -->
+	<div class="container">
+		
+		<div class="row">
+
+			<div class="twelve columns hide-on-phones">
+				<h2 class="spjdr" id="to_cluster">spjdr.dk</h2>
+				<div style="width:200px; height:80px; position: absolute; top: 20px; right: 0px;">
+					<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fspjdr.dk&amp;send=false&amp;layout=standard&amp;width=200&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=segoe+ui&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:80px;" allowTransparency="true"></iframe>
+				</div>
+				<!--<p>Vi elsker at bygge software. Så simpelt er det. Nyd vores apps. De er skabt i kærlighed.</p>
+				<hr />-->
+			</div>
+			
+			<div class="twelve columns show-on-phones">
+				<h1 class="spjdr">spjdr.dk</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<p class="twelve columns">Vi er begejstrede for de apps, vi har bygget. Prøv dem. Og kom med feedback til hvordan de skal udvikle sig, opdrages og støttes.</p>
+			<!--<p>We are excited about the apps, we have built. Try them. And give us feedback on how they should be brought up and supported.</p>-->
+			<hr/>
+			<ul class="apps clearfix">
+				<li class="app">
+
+						<a class="kog_icon app_icon" href="http://spjdr.dk/kortoggodt"></a>
+						<a class="app_title" href="http://spjdr.dk/kortoggodt">Kort og Godt</a>
+						<div class="app_desc hide-on-phones">Små digitale kort med hardcore facts om <em>scoutcraft</em>.</div>
+				</li>	
+				<li class="app">
+						<a class="flow_icon app_icon" href="http://spjdr.dk/flow"></a>
+						<a class="app_title" href="http://spjdr.dk/flow">Flow</a>
+						<div class="app_desc hide-on-phones">Eventplanlægning på større skala. </div>
+				</li>
+				<!--<li class="app">
+					<a href="http://spjdr.dk/vignere"><img src="images/apps/vignere96.png" /></a><br/>
+					<a href="http://spjdr.dk/vignere">Vignere</a><br>Løs den kode en gang til!
+				</li>
+				-->
+				<li class="app">
+						<a class="lbs_icon app_icon" href="http://spjdrpedia.dk/wiki/Forside"></a>
+						<a class="app_title" href="http://spjdrpedia.dk/wiki/Forside">Spjdrpedia</a>
+						<div class="app_desc hide-on-phones">En spejderwiki in spe.</div>
+				</li>
+
+				<li class="app">
+						<a class="huskekort_icon app_icon" href="http://ny.spjdr.dk/huskekort"></a>
+						<a class="app_title" href="http://ny.spjdr.dk/huskekort">Huskekort</a>
+						<div class="app_desc hide-on-phones">Huskekort for spejdere.</div>
+				</li>
+			</ul>
+			<hr/>
+		</div>
+		<div class="row">
+			<div class="eight columns">
+				<h3>Manifest</h3>
+				
+				<ol>
+				<!--<li><span class="spjdr">spjdr</span> is a non-profit software-development cooperation based in Denmark, which aims at delivering unique, innovative and usefull web-services.</li> -->
+				<li><span class="spjdr">spjdr</span> udvikler software, og vi arbejder på at levere unikke, nytænkende og brugbare web-services.</li> 
+				
+				<!--<li><span class="spjdr">spjdr</span> knows that the border between online and offline is growing increasingly thinner. We experiment with new ways to merge traditional outdoor sports and information technology.</li>-->
+				<li><span class="spjdr">spjdr</span> ved at grænsen mellem online og offline er under pres. Vi eksperimenterer med nye måder at inddrage udendørsaktiviteter og informationsteknologi.</li>
+								
+				<!--<li><span class="spjdr">spjdr</span> believes in doing rather than thinking. Technically speaking we use <a href="http://en.wikipedia.org/wiki/Rapid_application_development">rapid application development</a>. We also adhere to the <a href="http://en.wikipedia.org/wiki/Unix_philosophy">Unix philosophy</a> of <q>writing programs that do one thing and do it well</q>.</li>-->
+				<li><span class="spjdr">spjdr</span> tror på at gøre frem for at tænke. Teknisk set bruger vi <a href="http://en.wikipedia.org/wiki/Rapid_application_development">rapid application development</a>, og vi er fan af <a href="http://en.wikipedia.org/wiki/Unix_philosophy">the Unix philosophy</a> hvor <q>hvert program gør én ting rigtig godt</q>.</li>
+ 				
+ 				<!--<li><span class="spjdr">spjdr</span> originates in the <a href="http://spejdernet.dk" title="spejdernet.dk">danish scouting association</a>, and takes many ideas and concepts from the <a href="http://www.wosm.org" title="wosm.org">scout movement</a> in general.</li>-->
+				
+				<!--<li><span class="spjdr">spjdr</span> promotes a democratic mindset, social integration, intellectual development and personal evolution. Those values guide the development of new and existing programs.</li> -->
+				<li><span class="spjdr">spjdr</span> arbejder for at fremme et demokratisk livssyn, social ansvarlighed, intellektuelle udfordringer og personlig udvikling. Disse værdier styrer udviklingen af nye og eksisterende programmer og applikationer.</li>
+
+				<!--<li><span class="spjdr">spjdr</span> has a simple business-model. You pay us in <span class="love">love</span> by using and recommending our services. And the <span class="love">love</span> we get, is doubly used for both nuturing old programs and creating new ones.</li>-->
+				<li><span class="spjdr">spjdr</span> har en simpel forretningsmodel. Du giver din <span class="love">kærlighed</span> til de programmer du bruger og anbefaler, og den <span class="love">kærlighed</span> bruger vi så til styrke og udvikle nye og bedre programmer.</li>
+				<!--<li>Yes, <span class="spjdr">spjdr</span> will <a href="http://sælgdinsjæl.dk">buy your soul</a> if affordable. Otherwise you may <a href="join">rent it</a> to us.</li>-->
+				</ol>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Folk</h3>
+				<p>De her personer er tilknyttet <span class="spjdr">spjdr</span>. Vil du være en af dem? Skriv til <a href="mailto:kim@spjdr.dk">Kim</a> eller <a href="mailto:nikolaj@spjdr.dk">Nikolaj</a>.</p>
+			</div>
+			<ul>
+			<li class="four columns">				
+				<div class="person">
+					<img src="assets/img/people/kim.jpg" />
+					<h4>Kim</h4>
+					<p>PhD studerende i teoretisk fysik. Kim har altid fingrene dybt begravet i kode.</p>
+					<p>Kontakt: <a href="mailto:kim@spjdr.dk">kim@spjdr.dk</a></p>
+				</div>
+			</li>	
+			<li class="four columns">				
+				<div class="person">
+					<img src="assets/img/people/nikolaj.jpg" />
+					<h4>Nikolaj</h4>
+					<p>Læser IT og produktdesign. Passioneret jysk konceptudvikler.</p>
+					<p>Kontakt: <a href="mailto:nikolaj@spjdr.dk">nikolaj@spjdr.dk</a></p>
+				</div>
+			</li>
+			<li class="four columns">				
+				<div class="person">
+					<img src="assets/img/people/steen.jpg" />
+					<h4>Steen</h4>
+					<p>Studerer Offentlig Administration og kommunikation. Tegner midlertidige arkitektoniske rum, der giver liv og mødesteder.</p>
+				</div>
+			</li>
+			</ul>
+		</div>
+		
+		<!--<div class="row">
+			<div class="twelve columns">
+				<h3>Kontakt</h3>
+				
+				<form class="nice" method="get">
+					<input type="text" placeholder="din email" class="input-text" name="email"/>
+					<textarea class="large" placeholder="din besked&hellip;" name="message" id="message"></textarea>
+					<button class="blue nice radius medium button" type="submit">Send</button>
+				</form>
+			</div>
+		</div>-->
+		
+		<div class="row">
+			<div class="twelve columns">
+				&copy; 2014 spjdr.dk<br/>
+				Bygget af <a href="">cluster.js</a>, <a href="http://foundation.zurb.com">foundation</a> og <a href="http://jquery.com">jQuery</a>.<br/>
+				Følg også med i vores projekter på <a href="http://github.com/spjdr">gidhub.com/spjdr</a>.<br/>
+			</div>
+		</div>
+		
+		
+	</div>
+	<!-- container -->
+	
+	
+
+
+	<!-- Included JS Files  -->
+	<!-- These files are being included - to omit files, move them to the block below. -->
+
+	<script src="assets/js/jquery-1.5.1.min.js"></script>
+	<script src="assets/js/jquery.reveal.js"></script>
+	<script src="assets/js/jquery.orbit-1.3.0.js"></script>
+	<script src="assets/js/forms.jquery.js"></script>
+	<script src="assets/js/jquery.customforms.js"></script>
+	<script src="assets/js/jquery.placeholder.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/cluster.js"></script>
+	
+	<!-- These files are not being included.
+		# <script src="public/js/example.js"></script>
+		# 
+		# 
+		# 
+	-->
+	
+</body>
+</html>

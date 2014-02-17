@@ -1,0 +1,155 @@
+body 
+{
+	/*background-color: #555;
+	color: #ddd;*/
+	padding-bottom: 20px;
+}
+
+
+#facebook
+{
+	position: absolute;
+	top: 20px;
+	right: 0px;
+}
+
+/*
+ * A TAG
+ */
+
+/*a {
+	color: #FD8603;
+	font-weight: bold;
+}*/
+
+
+
+/*
+ * INLINE CLASS
+ * SPJDR
+ */
+
+.spjdr 
+{
+	font-family: Helvetica, Verdana, sans-serif;
+	/*color: #00DA3C;*/
+	font-weight: bold;
+}*
+
+/*
+ * INLINE CLASS
+ * LOVE
+ */
+
+/*.love
+{
+	font-family: Helvetica, Verdana, sans-serif;
+	color: #DF151A;
+	font-weight: bold;
+}*/
+
+
+/* 
+ * CLASS APP
+ */
+
+.apps {
+	padding: 15px 0 0 0;
+	margin: 0;
+}
+
+.app {
+	text-align: center;
+	float: left;
+	width: 180px;
+}
+
+.app_icon {
+	height: 120px;
+	display: block;
+	width: 120px;
+	border: 1px solid #bbb;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #ccc;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(248,250,252,1) 38%, rgba(239,245,249,1) 58%, rgba(244,249,252,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(38%,rgba(248,250,252,1)), color-stop(58%,rgba(239,245,249,1)), color-stop(100%,rgba(244,249,252,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(248,250,252,1) 38%,rgba(239,245,249,1) 58%,rgba(244,249,252,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(248,250,252,1) 38%,rgba(239,245,249,1) 58%,rgba(244,249,252,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(248,250,252,1) 38%,rgba(239,245,249,1) 58%,rgba(244,249,252,1) 100%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(248,250,252,1) 38%,rgba(239,245,249,1) 58%,rgba(244,249,252,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f9fc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.lbs_icon {
+	background-image: url('../img/apps/learningbysharing.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.flow_icon {
+	background-image: url('../img/apps/flow.png');
+}
+
+.kog_icon {
+	background-image: url('../img/apps/kortoggodt.png');
+}
+
+.app a {
+	display: block;
+}
+
+.app_title {
+	font-size: 120%;
+	font-weight: bold;
+	padding: 10px 5px 5px 5px;
+}
+
+.app_desc {
+	font-size: 85%;
+	padding: 0 10px;
+	height: 3.4em;
+	max-height: 3.1em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*.app:hover {
+	background-color: #99ee99;
+}*/
+
+
+
+
+/*
+ * CLASS PERSON
+ */
+
+.person
+{
+	position: relative;
+	height: 228px;
+	border: 1px solid #888;
+
+	padding: 10px;
+}
+
+.person img
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.person h4 
+{
+	margin-top: 10px;
+}
+
+.person h4, .person p
+{
+	margin-left: 140px;
+	margin-right: 10px;
+}
+
