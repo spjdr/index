@@ -5,7 +5,6 @@ body
 	padding-bottom: 20px;
 }
 
-
 #facebook
 {
 	position: absolute;
@@ -13,54 +12,37 @@ body
 	right: 0px;
 }
 
-/*
- * A TAG
- */
+.spjdrlogo {
+	background-image: url('../img/logo/spjdr.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 260px;
+	height: 130px;
+}
 
-/*a {
-	color: #FD8603;
-	font-weight: bold;
-}*/
-
-
-
-/*
- * INLINE CLASS
- * SPJDR
- */
-
-.spjdr 
-{
-	font-family: Helvetica, Verdana, sans-serif;
-	/*color: #00DA3C;*/
-	font-weight: bold;
-}*
-
-/*
- * INLINE CLASS
- * LOVE
- */
-
-/*.love
-{
-	font-family: Helvetica, Verdana, sans-serif;
-	color: #DF151A;
-	font-weight: bold;
-}*/
-
+.modernizrsvg .spjdrlogo {
+	background-image: url('../img/logo/spjdr-07.svg');
+}
 
 /* 
  * CLASS APP
  */
 
+.appcontainer {
+	background: #fdfdfd;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
 .apps {
-	padding: 15px 0 0 0;
-	margin: 0;
+	padding: 35px 0 0 0;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .app {
 	text-align: center;
-	float: left;
+	display: inline-block;
 	width: 180px;
 }
 
@@ -80,12 +62,12 @@ body
 	background: -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(248,250,252,1) 38%,rgba(239,245,249,1) 58%,rgba(244,249,252,1) 100%); /* IE10+ */
 	background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(248,250,252,1) 38%,rgba(239,245,249,1) 58%,rgba(244,249,252,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f9fc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .lbs_icon {
 	background-image: url('../img/apps/learningbysharing.png');
-	background-repeat: no-repeat;
-	background-position: center center;
 }
 
 .flow_icon {
@@ -94,6 +76,14 @@ body
 
 .kog_icon {
 	background-image: url('../img/apps/kortoggodt.png');
+}
+
+.huskekort_icon {
+	background-image: url('http://spjdr.dk/huskekort/assets/img/huskekort-icon-120x120.png');
+}
+
+.semafore_icon {
+	background-image: url('http://spjdr.dk/semafore/apple-touch-icon-120x120.png');
 }
 
 .app a {
@@ -106,6 +96,8 @@ body
 	padding: 10px 5px 5px 5px;
 }
 
+
+
 .app_desc {
 	font-size: 85%;
 	padding: 0 10px;
@@ -113,6 +105,35 @@ body
 	max-height: 3.1em;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 699px) {
+	.app_title {
+		font-size: 80%;
+	}
+
+	.app {
+		text-align: center;
+		float: left;
+		width: 110px;
+	}
+
+	.app_icon {
+		height: 76px;
+		width: 76px;
+	}
+
+	.huskekort_icon {
+		background-image: url('http://spjdr.dk/huskekort/assets/img/huskekort-icon-76x76.png');
+	}
+
+	.semafore_icon {
+		background-image: url('http://spjdr.dk/semafore/apple-touch-icon-76x76.png');
+	}
+
+	.app_title {
+		font-size: 10pt;
+	}
 }
 
 /*.app:hover {

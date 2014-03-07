@@ -11,14 +11,14 @@
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 	
-	<title>spjdr</title>
-	<meta name="title" content="spjdr"> 
+	<title>SPJDR</title>
+	<meta name="title" content="SPJDR"> 
 	<meta name="language" content="dan"> 
-	<meta property="og:image" content="http://ny.spjdr.dk/assets/img/logo/spjdr.jpg">
-	<meta name="description" content="spjdr is a non-profit web-development cooperation with roots in the danish scouting association."> 
-	<meta name="keywords" content="spjdr, scouting, kfum spejderne, klan picnic"> 
+	<meta property="og:image" content="http://spjdr.dk/assets/img/logo/spjdr.jpg">
+	<meta name="description" content="SPJDR is a non-profit web-development cooperation with roots in the danish scouting association."> 
+	<meta name="keywords" content="SPJDR, spejder, scouting, kfum spejderne, klan picnic"> 
 
-	<link rel="image_src" href="http://ny.spjdr.dk/assets/img/logo/spjdr.jpg" />
+	<link rel="image_src" href="http://spjdr.dk/assets/img/logo/spjdr.png" />
   
 	<!-- Included CSS Files -->
 	<!-- These files are being included - to omit files, move them to the block below. -->
@@ -31,6 +31,16 @@
 	<link rel="stylesheet" href="assets/css/cluster.css">
 	<link rel="stylesheet" href="assets/css/app.css">
 	<link rel="stylesheet" href="assets/css/mobile.css">
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
 
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="public/css/ie.css">
@@ -52,10 +62,9 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<style>
-
-		.huskekort_icon {
-			background-image: url('http://ny.spjdr.dk/huskekort/assets/img/huskekort-icon-120x120.png');
-		}
+/*		.huskekort_icon {
+			background-image: url('http://spjdr.dk/huskekort/assets/img/huskekort-icon-120x120.png');
+		}*/
 	</style>
 </head>
 <body>
@@ -66,7 +75,7 @@
 		<div class="row">
 
 			<div class="twelve columns hide-on-phones">
-				<h2 class="spjdr" id="to_cluster">spjdr.dk</h2>
+				<h2 class="spjdrlogo"></h2>
 				<div style="width:200px; height:80px; position: absolute; top: 20px; right: 0px;">
 					<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fspjdr.dk&amp;send=false&amp;layout=standard&amp;width=200&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=segoe+ui&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:80px;" allowTransparency="true"></iframe>
 				</div>
@@ -75,19 +84,22 @@
 			</div>
 			
 			<div class="twelve columns show-on-phones">
-				<h1 class="spjdr">spjdr.dk</h1>
+				<h2 class="spjdrlogo"></h2>
+				<!-- <h1 class="spjdr">spjdr.dk</h1> -->
 			</div>
 		</div>
 
 		<div class="row">
-			<p class="twelve columns">Vi er begejstrede for de apps, vi har bygget. Prøv dem. Og kom med feedback til hvordan de skal udvikle sig, opdrages og støttes.</p>
+			<p class="twelve columns hide-on-phones">Vi er begejstrede for de apps, vi har bygget. Prøv dem. Meninger, likes, og forslag til forbedringer modtages med kyshånd på <a href="http://facebook.com/spjdr">facebook.com/spjdr</a>.</p>
+		</div>
+		<div class="row">
 			<!--<p>We are excited about the apps, we have built. Try them. And give us feedback on how they should be brought up and supported.</p>-->
-			<hr/>
-			<ul class="apps clearfix">
+			<div class="columns twelve appcontainer">
+			<ul class="apps">
 				<li class="app">
 
-						<a class="kog_icon app_icon" href="http://spjdr.dk/kortoggodt"></a>
-						<a class="app_title" href="http://spjdr.dk/kortoggodt">Kort og Godt</a>
+						<a class="kog_icon app_icon" href="http://spjdr.dk/kortoggodt/index.php"></a>
+						<a class="app_title" href="http://spjdr.dk/kortoggodt/index.php">Kort og Godt</a>
 						<div class="app_desc hide-on-phones">Små digitale kort med hardcore facts om <em>scoutcraft</em>.</div>
 				</li>	
 				<li class="app">
@@ -102,18 +114,37 @@
 				-->
 				<li class="app">
 						<a class="lbs_icon app_icon" href="http://spjdrpedia.dk/wiki/Forside"></a>
-						<a class="app_title" href="http://spjdrpedia.dk/wiki/Forside">Spjdrpedia</a>
+						<a class="app_title" href="http://spjdrpedia.dk/wiki/Forside">SPJDRpedia</a>
 						<div class="app_desc hide-on-phones">En spejderwiki in spe.</div>
 				</li>
 
 				<li class="app">
-						<a class="huskekort_icon app_icon" href="http://ny.spjdr.dk/huskekort"></a>
-						<a class="app_title" href="http://ny.spjdr.dk/huskekort">Huskekort</a>
+						<a class="huskekort_icon app_icon" href="http://spjdr.dk/huskekort"></a>
+						<a class="app_title" href="http://spjdr.dk/huskekort">Huskekort</a>
 						<div class="app_desc hide-on-phones">Huskekort for spejdere.</div>
 				</li>
+
+
+				<li class="app">
+						<a class="semafore_icon  app_icon" href="http://spjdr.dk/semafore"></a>
+						<a class="app_title" href="http://spjdr.dk/semafore">Semafore</a>
+						<div class="app_desc hide-on-phones">Signalering dagen lang.</div>
+				</li>
+
+				<li class="app">
+				</li>
+				
+				<li class="app">
+				</li>
+
+				<li class="app">
+				</li>
+				<div class="clearfix"></div>
 			</ul>
-			<hr/>
+			
+			</div>
 		</div>
+		<br/>
 		<div class="row">
 			<div class="eight columns">
 				<h3>Manifest</h3>
@@ -172,22 +203,10 @@
 			</ul>
 		</div>
 		
-		<!--<div class="row">
-			<div class="twelve columns">
-				<h3>Kontakt</h3>
-				
-				<form class="nice" method="get">
-					<input type="text" placeholder="din email" class="input-text" name="email"/>
-					<textarea class="large" placeholder="din besked&hellip;" name="message" id="message"></textarea>
-					<button class="blue nice radius medium button" type="submit">Send</button>
-				</form>
-			</div>
-		</div>-->
-		
 		<div class="row">
 			<div class="twelve columns">
 				&copy; 2014 spjdr.dk<br/>
-				Bygget af <a href="">cluster.js</a>, <a href="http://foundation.zurb.com">foundation</a> og <a href="http://jquery.com">jQuery</a>.<br/>
+				Bygget af <a href="http://foundation.zurb.com">foundation</a> og <a href="http://jquery.com">jQuery</a>.<br/>
 				Følg også med i vores projekter på <a href="http://github.com/spjdr">gidhub.com/spjdr</a>.<br/>
 			</div>
 		</div>
@@ -209,8 +228,14 @@
 	<script src="assets/js/jquery.customforms.js"></script>
 	<script src="assets/js/jquery.placeholder.min.js"></script>
 	<script src="assets/js/app.js"></script>
-	<script src="assets/js/cluster.js"></script>
-	
+	<!-- <script src="assets/js/cluster.js"></script> -->
+	<script>
+	/* Modernizr 2.7.1 (Custom Build) | MIT & BSD
+	 * Build: http://modernizr.com/download/#-svg-cssclasses-cssclassprefix:modernizr
+	 */
+	;window.Modernizr=function(a,b,c){function v(a){j.cssText=a}function w(a,b){return v(prefixes.join(a+";")+(b||""))}function x(a,b){return typeof a===b}function y(a,b){return!!~(""+a).indexOf(b)}function z(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:x(f,"function")?f.bind(d||b):f}return!1}var d="2.7.1",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m={svg:"http://www.w3.org/2000/svg"},n={},o={},p={},q=[],r=q.slice,s,t={}.hasOwnProperty,u;!x(t,"undefined")&&!x(t.call,"undefined")?u=function(a,b){return t.call(a,b)}:u=function(a,b){return b in a&&x(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=r.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(r.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(r.call(arguments)))};return e}),n.svg=function(){return!!b.createElementNS&&!!b.createElementNS(m.svg,"svg").createSVGRect};for(var A in n)u(n,A)&&(s=A.toLowerCase(),e[s]=n[A](),q.push((e[s]?"":"no-")+s));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)u(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" modernizr"+(b?"":"no-")+a),e[a]=b}return e},v(""),i=k=null,e._version=d,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" modernizrjs modernizr"+q.join(" modernizr"):""),e}(this,this.document);
+	</script>
+
 	<!-- These files are not being included.
 		# <script src="public/js/example.js"></script>
 		# 
