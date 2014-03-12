@@ -86,6 +86,10 @@ body
 	background-image: url('http://spjdr.dk/semafore/apple-touch-icon-120x120.png');
 }
 
+.telegraf_icon {
+	background-image: url('http://spjdr.dk/telegraf/assets/icon/apple-touch-icon-120x120.png');
+}
+
 .app a {
 	display: block;
 }
@@ -129,6 +133,10 @@ body
 
 	.semafore_icon {
 		background-image: url('http://spjdr.dk/semafore/apple-touch-icon-76x76.png');
+	}
+
+	.telegraf_icon {
+		background-image: url('http://spjdr.dk/telegraf/assets/icon/apple-touch-icon-76x76.png');
 	}
 
 	.app_title {
